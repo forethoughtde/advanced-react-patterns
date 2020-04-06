@@ -1,11 +1,11 @@
 import React from "react";
 import useWidth, { LARGE, MEDIUM } from "./useWidth";
 // remove the following import after refactoring the Width component to a custom hook
-import Width from "./useWidth";
+// import Width from "./useWidth";
 
 const Bonus = () => {
   // use the following commented out code after implementing the useWidth custom hook
-  // const width = useWidth();
+  const width = useWidth();
 
   return (
     <React.Fragment>
@@ -41,7 +41,7 @@ const Bonus = () => {
         <code>const width = useWidth()</code>
       </p>
 
-      {/* 
+      {/*
       Use the following commented out code after implementing the useWidth custom hook
       {width === LARGE ? (
         <h1>I'm a large screen</h1>
@@ -53,7 +53,7 @@ const Bonus = () => {
 
       {/* Comment this out after implementing your useWidth custom hook */}
       <h1>
-        <Width />
+          {width}
       </h1>
     </React.Fragment>
   );
